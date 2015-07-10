@@ -20,7 +20,7 @@
         android:layout_marginTop="25dp" >
 
         <Button
-            android:id="@+id/button1"
+            android:id="@+id/btDown"
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -30,7 +30,7 @@
         </Button>
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/btUp"
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -41,11 +41,22 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btPlay"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Play"
+        android:enabled="true"
         android:onClick="playClick" >
     </Button>
+    
+    <Button
+        android:id="@+id/btStop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Stop"
+        android:enabled="false"
+        android:onClick="stopClick" >
+    </Button>
+    
     
 </LinearLayout>
